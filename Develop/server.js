@@ -9,11 +9,11 @@ const app = express();
 const path = require('path');
 // setting up a router through express
 const router = require('express').Router();
-
+// express . get to set up path to db
 app.get('/api/notes', (req, res) => {
     res.sendFile(path.join(__dirname, './db/db.json'))
 });
-
+// allows user to add notes by using post method
 app.post('/api/notes', (req, res) => {
     let newNote = req.body
     let addNote = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'))
@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, './public/notes.html'))
 });
-
+// allows user to delete notes that are taken
 app.delete('/api/notes/:id', (req, res) => {
     let readNote = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'))
     let noteId = req.params.id.toString()  

@@ -13,6 +13,9 @@ https://github.com/jswearingen18/NotesNewDawn
 N/A
 
 ## Visuals
+![notestaker image](https://user-images.githubusercontent.com/109003414/196596590-952db9b9-4a6a-40d7-a09d-29495e862a52.png)
+
+![notes taker image 2](https://user-images.githubusercontent.com/109003414/196596632-fa93013c-ceb9-40f6-a35c-84f82b391003.png)
 
 
 ## Usage
